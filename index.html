@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Task Manager</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Student Task Manager</h1>
+        <p>Organize your academic tasks efficiently</p>
+    </header>
+
+    <main class="container">
+
+        <section class="task-card">
+
+            <h2>Add a New Task</h2>
+
+            <label for="taskInput">Task Name</label>
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter your assignment or task"
+            >
+
+            <label for="priorityInput">Priority</label>
+
+            <select id="priorityInput">
+                <option value="High">High Priority</option>
+                <option value="Medium">Medium Priority</option>
+                <option value="Low">Low Priority</option>
+            </select>
+
+            <button id="addButton">
+                Add Task
+            </button>
+
+        </section>
+
+
+        <section class="task-card">
+
+            <h2>My Tasks</h2>
+
+            <p id="taskCount">
+                Total Tasks: 0
+            </p>
+
+            <ul id="taskList"></ul>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>
+            Week 3 Web Application Project
+        </p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
